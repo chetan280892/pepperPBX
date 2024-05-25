@@ -36,8 +36,7 @@ Assert.assertTrue(url.contains("dashboard"));
         loginpage.enterUsername("test");
         loginpage.enterPassword("Vindaloo@123#");
         loginpage.clickOnLoginButton();
-        String url=driver.getCurrentUrl();
-        Assert.assertFalse(url.contains("dashboard"));
- 
+       String msg= loginpage.errorMsg(driver);
+       Assert.assertEquals(msg, "incorrec");
 	}
 	}

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri May 24 18:46:05 IST 2024</td>
+<td>Started on:</td><td>Sat May 25 11:00:45 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>95 seconds (95751 ms)</td>
+<tr><td>Total time:</td><td>61 seconds (61710 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -77,11 +77,13 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='test.LoginPageTest.loginWithInvalidCredentials()'><b>loginWithInvalidCredentials</b><br>Test class: test.LoginPageTest</td>
-<td><div><pre>java.lang.AssertionError: expected [false] but found [true]
+<td><div><pre>java.lang.AssertionError: expected [incorrec] but found [Username or password is incorrect]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertFalse(Assert.java:79)
-	at org.testng.Assert.assertFalse(Assert.java:89)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
 	at test.LoginPageTest.loginWithInvalidCredentials(LoginPageTest.java:40)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -111,12 +113,14 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1184974266", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1184974266'><pre>java.lang.AssertionError: expected [false] but found [true]
+</pre></div><a href='#' onClick='toggleBox("stack-trace1754087707", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1754087707'><pre>java.lang.AssertionError: expected [incorrec] but found [Username or password is incorrect]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertFalse(Assert.java:79)
-	at org.testng.Assert.assertFalse(Assert.java:89)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
 	at test.LoginPageTest.loginWithInvalidCredentials(LoginPageTest.java:40)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -147,22 +151,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>8</td>
-<td>test.LoginPageTest@6955cb39</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='test.LoginPageTest.loginWithValidCredentials()'><b>loginWithValidCredentials</b><br>Test class: test.LoginPageTest</td>
-<td></td>
-<td>14</td>
-<td>test.LoginPageTest@6955cb39</td></tr>
+<td>6</td>
+<td>test.LoginPageTest@3a1dd365</td></tr>
 </table><p>
 </body>
 </html>
